@@ -1,12 +1,12 @@
 {
   "name": "@nijisog/todo_common",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "common code base for doit",
   "main": "./build/index.js",
   "files": ["build/**/*"],
   "scripts": {
     "clean": "del-cli ./build/*",
-    "copy": "cp -R src/* build/",
+    "copy": "copy -R src/* build/",
     "build": "npm run clean && mkdir -p build && npm run copy",
     "pub": "npm run build && npm publish --access public"
   },
