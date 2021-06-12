@@ -1,6 +1,6 @@
 {
-  "name": "common",
-  "version": "1.0.0",
+  "name": "@nijisog/todo_common",
+  "version": "1.0.1",
   "description": "common code base for doit",
   "main": "index.js",
   "scripts": {
