@@ -1,3 +1,3 @@
-exports.asyncHandler = (fn) => (req, result, next) => {
+exports.asyncHandler = (fn) => (req, res, next) => {
     Promise.resolve(fn(req, res, next)).catch(next);
-}
+}   

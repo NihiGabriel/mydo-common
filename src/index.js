@@ -1,12 +1,12 @@
 const { asyncHandler } = require('./middleware/async.mw');
-const { protect, authorize } = require('./middleware/auth.mw')
+const { protect, authorize } = require('./middleware/auth.mw')   
 
 const {
     isObject,
     isString,
     isArray,
-    strToArray,
-    strToArrayEs6,
+    strToArray,                                                         // we bring in all functions here so as to be able to publish on NPM
+    strToArrayEs6,                                                      
     strIncludes,
     strIncludesEs6,
     dateToWord,

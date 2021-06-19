@@ -7,7 +7,7 @@ const MONGODB_URI= 'mongodb+srv://Okiri:dzRVHy19sEA3RF9H@contactkeeper.lerxq.mon
 let dbConn;
 
 const options = {
-    useNewUrlParser: true,
+  useNewUrlParser: true,
   useCreateIndex: true,
   autoIndex: true,
   keepAlive: true,
@@ -20,6 +20,7 @@ const options = {
   useUnifiedTopology: true,
 }
 
+// gte role model(table) from the auth DB
 const getRoleModel = async () => {
     await connectDB(); // connect to the DB
     const model = await dbConn.collection('roles');
@@ -32,4 +33,4 @@ const connectDB = async () => {
     console.log('Auth database connected');
 }
 
-module.exports = (getRoleModel, connectDB);
+module.exports = {getRoleModel, connectDB};

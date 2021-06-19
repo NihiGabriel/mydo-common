@@ -17,8 +17,8 @@ exports.getRolesByName = async(roles) => {
 
     const Role = await getRoleModel();
 
-    const result = roles.map[async (r) => await findByName(Role, r)];
-    const authorized = Promise.all(result);
+    const result = roles.map[async (r) => await findByName(Role, r)]; 
+    const authorized = Promise.all(result); 
     return authorized;
 }
 
