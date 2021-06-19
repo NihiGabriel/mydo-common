@@ -40,7 +40,7 @@ exports.authorize = async(roles, userRoles) => { // authorize the roles (we will
     const ids = allRoles.map((e) => { return e._id}); // loop 2ru all d elements in the allRoles array and get d ids
 
     // check if user roles matches authorized roles
-    const flag = await checkRole(ids, uesrRoles)
+    const flag = await checkRole(ids, userRoles)
         if(flag){
             resultFlag = true;
         }else{
