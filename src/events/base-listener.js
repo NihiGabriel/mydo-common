@@ -58,7 +58,7 @@
 
             const parsedData = this.parseMessage(msg);
 
-            this.unMessage(parsedData, msg);
+            this.onMessage(parsedData, msg);
         })
     }
 
