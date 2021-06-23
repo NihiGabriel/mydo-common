@@ -4,4 +4,4 @@ const Subjects = {
     CountryFound: 'country:found'
 }
 
-module.exports = object.freeze(Subjects);
+module.exports = Object.freeze(Subjects);
