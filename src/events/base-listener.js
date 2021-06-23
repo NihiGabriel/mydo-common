@@ -69,7 +69,7 @@
         : JSON.parse(data.toString('utf8'))
     }
 
-    onMessage(data, msg)
+    onMessage(data, msg){}
  }
 
  module.exports = Listener;
