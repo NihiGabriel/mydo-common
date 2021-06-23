@@ -12,7 +12,7 @@
     #client;
 
     // protected _ackwait to acknowledge nats message
-    _ackwait = 5 * 60;
+    _ackwait = 5 * 1000;
 
     subject = Subjects;
     queueGroupName; // public property
