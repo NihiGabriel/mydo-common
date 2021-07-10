@@ -25,7 +25,7 @@ class Publisher{
 
         return new Promise((resolve, reject) => {
 
-            this.#client.publish(this.subject, JSON.stringify(data), (err) => {
+            this.#client.publish(this.subject, JSON.stringify(data), (err) => {   // publish will publish to the cluster and wait for an acknowledgement
 
                 if(err){
                     return reject(err);
