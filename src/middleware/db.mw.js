@@ -20,7 +20,7 @@ const options = {
   useUnifiedTopology: true,
 }
 
-// gte role model(table) from the auth DB
+// get role model(table) from the auth DB
 const getRoleModel = async () => {
     await connectDB(); // connect to the DB
     const model = await dbConn.collection('roles');

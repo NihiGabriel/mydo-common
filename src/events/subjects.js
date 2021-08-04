@@ -1,7 +1,7 @@
 const Subjects = {
 
-    UserCreated: 'user:created',
-    CountryFound: 'country:found'
+    UserCreated: 'todo.user.created',
+    CountryFound: 'todo.country.found'
 }
 
 module.exports = Object.freeze(Subjects);
