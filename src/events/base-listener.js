@@ -41,6 +41,7 @@
         .setDeliverAllAvailable()  // get all the messages inside the channels
         .setManualAckMode(true)     // acknowledging a message manually by setting to true
         .setAckWait(this._ackwait) // settin a waiting time for nats  AckWait is an Option to set the timeout for waiting for an ACK from the cluster's point of view for delivered messages.
+        .setStartAtTimeDelta(1 * 1000) // 1 sec
         .setDurableName(this.queueGroupName); // setting a durable name
     }
 
