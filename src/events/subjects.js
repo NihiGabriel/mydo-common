@@ -6,6 +6,7 @@ const Subjects = {
     ReminderCompleted: 'todo.reminder.completed',
     ItemNudged: 'todo.item.nudged',
     ItemAbandoned: 'todo.item.abandoned',
+    ItemCompleted: 'todo.item.completed',
     TodoCompleted: 'todo.todo.completed'
 }
 
