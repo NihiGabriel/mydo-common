@@ -1,9 +1,11 @@
 {
   "name": "@nijisog/todo_common",
-  "version": "1.0.30",
+  "version": "1.0.31",
   "description": "common code base for doit",
   "main": "./build/index.js",
-  "files": ["build/**/*"],
+  "files": [
+    "build/**/*"
+  ],
   "scripts": {
     "clean": "del-cli ./build/*",
     "copy": "cp -R src/* build/",
