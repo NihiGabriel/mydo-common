@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 const colors = require('colors');
 
-const MONGODB_URI= 'mongodb+srv://Okiri:dzRVHy19sEA3RF9H@contactkeeper.lerxq.mongodb.net/doauth_db?retryWrites=true&w=majority'
+const MONGODB_URI= 'hhh'
 
 let dbConn;
 
